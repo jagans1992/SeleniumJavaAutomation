@@ -1,0 +1,12 @@
+/bin
+/maven
+/build/
+/repository/
+.settings
+/test-output/
+/img
+/dependencies
+/ou.txt
+/target/
+/test-results/
+/test-history/

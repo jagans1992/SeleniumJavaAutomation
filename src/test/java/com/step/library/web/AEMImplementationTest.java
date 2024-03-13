@@ -9,8 +9,6 @@ import com.common.util.CommonUtil;
 import com.locators.PageLocators;
 import com.step.library.interfaces.AEMImplementationStepLibrary;
 
-import utilis.BasePage;
-
 public class AEMImplementationTest extends CommonUtil implements AEMImplementationStepLibrary {
 
 	static PageLocators locator = new PageLocators();
@@ -34,7 +32,7 @@ public class AEMImplementationTest extends CommonUtil implements AEMImplementati
 
 	@Override
 	public void verifyContent(String value) throws IOException {
-		String jsonKey = value;
+//		String jsonKey = value;
 		ContentVerification(value, locator.headingText);
 		// User for specific sub key value
 //		ContentVerification(getJsonData(jsonKey, "text"), locator.headingText);
