@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BasePage {
+public class BasePage extends LoggerUtil{
 
 	public static WebDriver driver;
 	public static ResourceBundle env = ResourceBundle.getBundle("global");

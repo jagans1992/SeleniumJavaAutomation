@@ -10,7 +10,6 @@ import com.locators.PageLocators;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import utilis.BasePage;
 
 public class StepDefinition extends CommonUtil {
 
@@ -23,6 +22,7 @@ public class StepDefinition extends CommonUtil {
 
 	@Given("User launch a web page {string}")
 	public void getURL(String URL) throws IOException {
+		logger.info("This is my logging");
 		CommonUtil.getPageURL(URL);
 	}
 
@@ -35,7 +35,7 @@ public class StepDefinition extends CommonUtil {
 
 	@Then("User verify the content {string}")
 	public void verifyContent(String value) throws IOException, InterruptedException {
-		String jsonKey;
+//		String jsonKey;
 		Thread.sleep(20000);
 		CommonUtil.ContentVerification(value, locator.headingText);
 		// User for specific sub key value
