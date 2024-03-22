@@ -15,7 +15,7 @@ public interface JsonComparisonStepLibrary {
 	
 	@And("User verify {marsha} form Epic {epic} and Catalog {catalog} json and generate the report {folder}")
 	public void verifyAPIResonse(String marsha, String epic, String catalog, String folder);
-	
+	// Verify Json
 	@And("User generate the Final Report {jsonComparison}")
 	public void generateFinalReport(String folder) throws FileNotFoundException, IOException;
 }
